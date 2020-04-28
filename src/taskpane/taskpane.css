@@ -1,0 +1,85 @@
+/*
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.synergiesAddin {
+  padding: 20px;
+}
+
+.synergiesAddin .subHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.synergiesAddin .subHeader small {
+  color: #666;
+  font-weight: normal;
+}
+
+.btnLoadStocks {
+  display: block;
+  margin: 30px auto;
+}
+
+.searchBox {
+  margin: 0 -20px;
+  padding: 5px 20px;
+  background-color: #eee;
+}
+
+.searchBox input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.1;
+  height: auto;
+  padding: .3em .5em;
+  border: 1px solid rgba(0,0,0,.05);
+}
+
+.stockRow {
+  display: flex;
+  padding: 10px;
+  font-size: 14px;
+  margin: 0 -10px;
+}
+
+.stockRow + .stockRow {
+  border-top: 1px solid #ddd;
+}
+
+.stockRow .name {
+  flex: 1;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1em;
+}
+
+.stockRow .price {
+  flex: 0 0 auto;
+  text-align: right;
+  padding-left: 20px;
+}
+
+.btnShowMore {
+  margin: 20px 0 0;
+}
